@@ -19,5 +19,8 @@ def simple_http_client(url):
         print("Request error:", e)
 
 if __name__ == "__main__":
-    url =  "http://127.0.0.1:5000?string=WUaKFvAVjD"
-    simple_http_client(url)
+    # url =  "http://python-http-client:5000?string=WUaKFvAVjD"
+    # # url =  "http://python-web-service:5000?string=WUaKFvAVjD"
+    # simple_http_client(url)
+    while(True):
+        print()
