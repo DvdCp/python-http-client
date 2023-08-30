@@ -19,8 +19,16 @@ def simple_http_client(url):
         print("Request error:", e)
 
 if __name__ == "__main__":
-    # url =  "http://python-http-client:5000?string=WUaKFvAVjD"
-    # # url =  "http://python-web-service:5000?string=WUaKFvAVjD"
-    # simple_http_client(url)
-    while(True):
-        print()
+
+    print('Enter a string to search into db\nDigit -1 to exit')
+    while True:
+        userChoice = input('> ')
+
+        if userChoice == '-1':
+            break
+
+
+        url =  "http://python-web-service:5000?string={}".format(userChoice)
+        simple_http_client(url)
+
+    print('Bye !')
